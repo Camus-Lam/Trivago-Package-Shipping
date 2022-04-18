@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="../static/stylesheets/styles.css">
+        <script type="text/javascript" src="./script.js"></script>
+    </head>
+
+    <body>
+            <button type="button" class="next" style="position: absolute; top: 1%; right: 0.5%; height: 7%; text-align: left;" onclick="swap_units()">
+        <p id="unit-btn">Imperial Units</p>
+    </button>
+
+        <h1 class='pack_details_per'>Destination Address</h1>
+        <p class='med-to'>The address I am sending the package to is</p>
+
+        <div class="address-form">
+            <form>
+                <input type="text" id="to_address" name="to_address" placeholder="Address" class="pack-in"><br>
+                <input type="text" id="to_town_city" name="to_town_city" placeholder="Town/City" class="pack-in">
+                <input type="text" id="to_country" name="to_country" placeholder="Country" class="pack-in"><br>
+                <input type="text" id="to_postal" name="to_postal" placeholder="Postal Code" class="pack-in">
+            </form>
+            <button type="button" class='use-prev-button' onclick="previous_dest_address()">
+                <p>Use Previous Package Details</p>
+            </button>
+            <p id="error2"></p>
+        </div>
+
+        <div class='bottom'>
+            <a href='./from_address.html'>
+                <button type="button" class='back' >
+                    <p>Back</p>
+                </button>
+            </a>
+
+            <div class='dot-group'>
+                <span class="dot-bus"></span>
+                <span class="dot-bus"></span>
+                <span class="dot-bus" style="background-color:#B58F68;"></span>
+                <span class="dot-bus"></span>
+                <span class="dot-bus"></span>
+            </div>
+                <button type="button" class='next' onclick="dest_address()">
+                    <p>Next</p>
+                </button>
+        </div>
+
+
+    </body>
+</html>

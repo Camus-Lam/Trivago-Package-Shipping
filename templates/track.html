@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="../static/stylesheets/styles.css">
+        <script type="text/javascript" src="./script.js"></script>
+    </head>
+
+    <body>
+            <button type="button" class="next" style="position: absolute; top: 1%; right: 0.5%; height: 7%; text-align: left;" onclick="swap_units()">
+        <p id="unit-btn">Imperial Units</p>
+    </button>
+        
+        <h2 class='pack_details_per'>Package Tracking</h2>
+        <p class='med-to'>Do I want to be able to track my packages during transit?</p>
+
+        <div class="yes_no_per">
+            <button type="button" class='yes2' onclick="change_button('yes2', 'no2')">
+                <p>Yes</p>
+            </button>
+            <button type="button" class='no2' onclick="change_button('no2', 'yes2')">
+                <p>No</p>
+            </button>
+        </div>
+
+        <div class='bottom'>
+            <a href='./per_dest_address.html'>
+                <button type="button" class='back' >
+                    <p>Back</p>
+                </button>
+            </a>
+
+            <div class='dot-group'>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per" style="background-color:#B58F68;"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+            </div>
+            <a href='./fragile.html'>
+                <button type="button" class='next' onclick="track()">
+                    <p>Next</p>
+                </button>
+            </a>
+        </div>
+
+
+    </body>
+</html>

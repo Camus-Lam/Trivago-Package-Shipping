@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="../static/stylesheets/styles.css">
+        <script type="text/javascript" src="./script.js"></script>
+    </head>
+
+    <body>
+            <button type="button" class="next" style="position: absolute; top: 1%; right: 0.5%; height: 7%; text-align: left;" onclick="swap_units()">
+        <p id="unit-btn">Imperial Units</p>
+    </button>
+
+        <h1 class='pack_details_per'>From Address</h1>
+        <p class='med'>The address I am sending the package from is</p>
+        <p class='small-per'>*This will be used to calculate shipping costs and distance to branch locations</p>
+
+        <div class="address-form">
+            <form>
+                <input type="text" id="from_address" name="from_address" placeholder="Address" class="pack-in"><br>
+                <input type="text" id="town_city" name="town_city" placeholder="Town/City" class="pack-in">
+                <input type="text" id="country" name="country" placeholder="Country" class="pack-in"><br>
+                <input type="text" id="postal" name="postal" placeholder="Postal Code" class="pack-in">
+            </form>
+            <p id="error2"></p>
+        </div>
+
+        <div class='bottom'>
+            <a href='./weight.html'>
+                <button type="button" class='back' >
+                    <p>Back</p>
+                </button>
+            </a>
+
+            <div class='dot-group'>
+                <span class="dot-per"></span>
+                <span class="dot-per" ></span>
+                <span class="dot-per" style="background-color:#B58F68;"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+            </div>
+                <button type="button" class='next' onclick="from_address()">
+                    <p>Next</p>
+                </button>
+        </div>
+
+
+    </body>
+</html>

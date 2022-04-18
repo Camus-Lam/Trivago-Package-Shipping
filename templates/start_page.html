@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                // Get data from the endpoint "/test/get"
+                $("#test_get").click(function(){
+                  $.getJSON("/test/get", function(data, status){
+                      $.each( data, function( key, val ) {
+                          alert("key: " + key + "\nValue: " + val + "\nStatus: " + status);
+                      });
+                  });
+                });
+
+                // Send data from the form with id: form_test
+                $("#form_test").submit(function (e) {
+                    e.preventDefault();
+
+                    var form = $(this);
+                    $.ajax({
+                        type: form.attr('method'),
+                        url: form.attr('action'),
+                        data: $('#form_test').serialize()
+                    }).done(function(data) {
+                        console.log(data);
+                    }).fail(function(data) {
+                        console.log(data);
+                    });
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+
+        <!-- Go to page /package_details -->
+        <a href="{{ url_for('package_details') }}">
+            <input type="submit" value="Go to next page" />
+        </a>
+
+        <br><br>
+
+        <!-- Test the get request from backend -->
+        <button id="test_get">test backend get request</button>
+
+        <!-- Send form data to the endpoint "/api/add -->
+        <form id="form_test" action="/api/add_package" method="post">
+            <label>
+                <input name="package_details" value="test" />
+            </label>
+        </form>
+
+        <button type="submit" form="form_test" value="Submit">Submit</button>
+
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="../static/stylesheets/styles.css">
+        <script type="text/javascript" src="./script.js"></script>
+    </head>
+
+    <body>
+
+        <button type="button" class="next" style="position: absolute; top: 1%; right: 0.5%; height: 7%; text-align: left;" onclick="swap_units()">
+            <p id="unit-btn">Imperial Units</p>
+        </button>
+
+        <h1 class='pack_details'>Package Details</h1>
+        <p class='per_details'>The dimensions of the package I want to ship is</p>
+        <div class='button-group'>
+            <a class="img-container">
+                <input type="image" src="../static/assets/envelop.png" alt="envelop" name="envelop" class="img-btn" onclick="size_per(0)">
+                    <p class='pack_details' id="box-text1">Envelop<br>(1inx1inx4in)</p>
+                </input>
+            </a>
+
+            <a class="img-container">
+                <input type="image" src="../static/assets/box-small.png" alt="small--box" name="small--box" class="img-btn"  onclick="size_per(1)">
+                    <p class='pack_details' id="box-text2">Medium<br>(10inx10inx10in)</p>
+                </input>
+            </a>
+            <a class="img-container">
+                <input type="image" src="../static/assets/box-big.png" alt="big--box" name="big--box" class="img-btn" onclick="size_per(2)">
+                    <p class='pack_details' id="box-text3">Large<br>(25inx25inx25in)</p>
+                </input>
+            </a>
+            
+        </div>
+
+            <button type="button" class="custom-dimensions-btn" onclick="custom()">
+                <p>Custom</p>
+                <p>Dimensions</p>
+            </button>
+            
+        
+        <div class='bottom'>
+            <a href='./home.html'>
+                <button type="button" class='back' >
+                    <p>Back</p>
+                </button>
+            </a>
+
+            <div class='dot-group'>
+                <span class="dot-per" style="background-color:#B58F68;"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+                <span class="dot-per"></span>
+            </div>
+            <p id='error4'></p>
+            <button type="button" class='next' onclick="per_package_detail()">
+                <p>Next</p>
+            </button>
+
+        </div>
+
+    </body>
+</html>

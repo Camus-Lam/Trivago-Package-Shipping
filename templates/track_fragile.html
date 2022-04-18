@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="../static/stylesheets/styles.css">
+        <script type="text/javascript" src="./script.js"></script>
+    </head>
+
+    <body>
+
+        <h2 class='pack_details_per'>Package Tracking</h1>
+        <p class='med-to'>Do I want to be able to track my packages during transit?</p>
+
+        <div class="yes_no">
+            <button type="button" class='yes1' onclick="change_button('yes1', 'no1')">
+                <p>Yes</p>
+            </button>
+            <button type="button" class='no1' onclick="change_button('no1', 'yes1')">
+                <p>No</p>
+            </button>
+        </div>
+        
+        <h2 class='pack_details_per'>Fragile</h1>
+        <p class='med-to'>Does my package contain fragile items?</p>
+
+        <div class="yes_no">
+            <button type="button" class='yes2' onclick="change_button('yes2', 'no2')">
+                <p>Yes</p>
+            </button>
+            <button type="button" class='no2' onclick="change_button('no2', 'yes2')">
+                <p>No</p>
+            </button>
+        </div>
+
+        <div class='bottom'>
+            <a href='./dest_address.html'>
+                <button type="button" class='back' >
+                    <p>Back</p>
+                </button>
+            </a>
+
+            <div class='dot-group'>
+                <span class="dot-bus"></span>
+                <span class="dot-bus"></span>
+                <span class="dot-bus"></span>
+                <span class="dot-bus" style="background-color:#B58F68;"></span>
+                <span class="dot-bus"></span>
+            </div>
+            <a href='./package_cart.html'>
+                <button type="button" class='next' >
+                    <p>Next</p>
+                </button>
+            </a>
+        </div>
+
+
+    </body>
+</html>

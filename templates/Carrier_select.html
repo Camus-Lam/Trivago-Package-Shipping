@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carrier Select</title>
+    <link rel="stylesheet" href="../static/stylesheets/styles.css">
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+    <div class"header">
+    	<button type="button" class="homepage" onclick="back_home()" style="position: absolute;right: 8%;">
+            <p>Empty cart & start again</p>
+        </button>
+        <h3>Carrier Select</h3>
+    </div>
+    <div id="promoModal1" class="modal">
+      <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close" onclick="closeModal(1)">&times;</span>
+	    <p>1. You can get $0.50 OFF per package when sending more than 5 pakcages</p>
+	    <p>2. You can get $1 OFF per package when sending packages over 1kg</p>
+	    <p>3. You can get $0.25 OFF per pakcage when sending to other province</p>
+	  </div>
+	</div>
+	<div id="promoModal2" class="modal">
+      <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close" onclick="closeModal(2)">&times;</span>
+	    <p>1. You can get $0.75 OFF per package when sending more than 4 pakcages</p>
+	    <p>2. You can get $0.50 OFF for any international packages</p>
+	  </div>
+	</div>
+	<div id="carrier-body">
+		<table id="tableheader" class="carrier-list" style="width:90%;">
+			<thead>
+				<tr><th>
+					<div><img id="carrier_sort" src="../static/assets/carrier_asc.png" onmouseover="this.src='../static/assets/carrier_asc_hover.png'" onmouseout="this.src='../static/assets/carrier_asc.png'" onclick="sort(1)"></th><th id="branch"><img id="branch_sort" src="../static/assets/branch_asc.png" onmouseover="this.src='../static/assets/branch_asc_hover.png'" onmouseout="this.src='../static/assets/branch_asc.png'" onclick="sort(2)"></th><th id="price"><img id="price_sort" src="../static/assets/price_asc.png" onmouseover="this.src='../static/assets/price_asc_hover.png'" onmouseout="this.src='../static/assets/price_asc.png'" onclick="sort(3)"></th></tr>
+			</thead>
+				<tbody>
+					<tr onclick="opencarrier(2)"><td style="text-align: center;border-bottom: 0;">UPS Express</td><td style="text-align: center;border-bottom: 0;">3 km</td><td rowspan="2" style="text-align: right">$8.99</td></tr>
+					<tr><td style="text-align: center;border-top: 0;" onclick="open_review(2)">8 <img src="../static/assets/3stars_dark.png" style="vertical-align: middle;width:200px;height:38px;"></td><td style="text-align: center;border-top: 0;">100 Avenue, ON K8A 5B7</td></tr>
+				</tbody>
+				<tbody>
+					<tr onclick="opencarrier(3)"><td style="text-align: center;border-bottom: 0;">Amazon</td><td style="text-align: center;border-bottom: 0;">2.3 km</td><td rowspan="2" style="text-align: right"><img src="../static/assets/instore_pickup_light.png" style="vertical-align: middle;width:25px;height:25px;">$9.99</td></tr>
+					<tr><td style="text-align: center;border-top: 0;" onclick="open_review(3)">5 <img src="../static/assets/2stars_light.png" style="vertical-align: middle;width:200px;height:38px"></td><td style="text-align: center;border-top: 0;">143 Avenue, ON K1B 6F2</td></tr>
+				</tbody>
+				<tbody>
+					<tr onclick="opencarrier(1)"><td style="text-align: center;border-bottom: 0;">Canada Post Regular</td><td style="text-align: center;border-bottom: 0;">2 km</td><td rowspan="2" style="text-align: right"><img src="../static/assets/mag_glass_dark.png" style="vertical-align: middle;width:25px;height:25px;"><img src="../static/assets/instore_pickup_dark.png" style="vertical-align: middle;width:25px;height:25px;">$10.99</td></tr>
+					<tr><td style="text-align: center;border-top: 0;" onclick="open_review(1)">5 <img src="../static/assets/5stars_dark.png" style="vertical-align: middle;width:200px;height:38px"></td><td style="text-align: center;border-top: 0;">123 Street, ON J7F 9J6</td></tr>
+				</tbody>
+				<tbody>
+					<tr onclick="opencarrier(2)"><td style="text-align: center;border-bottom: 0;">UPS Premium</td><td style="text-align: center;border-bottom: 0;">3 km</td><td style="text-align: right;border-bottom: 0;color: #FFBBBB">$15.99</td></tr>
+					<tr><td style="text-align: center;border-top: 0;" onclick="open_review(4)">9 <img src="../static/assets/3stars_light.png" style="vertical-align: middle;width:200px;height:38px"></td><td style="text-align: center;border-top: 0;">100 Avenue, ON K8A 5B7</td><td style="text-align: right;border-top: 0;color: #FFBBBB" onclick="openModal(1)">Promotion Available</td></tr>
+				</tbody>
+				<tbody>
+					<tr onclick="opencarrier(4)"><td style="text-align: center;border-bottom: 0;">Purolator</td><td style="text-align: center;border-bottom: 0;">5 km</td><td style="text-align: right;border-bottom: 0;color: #FFBBBB"><img src="../static/assets/mag_glass_red_dark.png" style="vertical-align: middle;width:25px;height:25px;">$17.99</td></tr>
+					<tr><td style="text-align: center;border-top: 0;" onclick="open_review(5)">7 <img src="../static/assets/4stars_dark.png" style="vertical-align: middle;width:200px;height:38px"></td><td style="text-align: center;border-top: 0;">49 Avenue, ON K2A 3C6</td><td style="text-align: right;border-top: 0;color: #FFBBBB" onclick="openModal(2)">Promotion Available</td></tr>
+				</tbody>
+		</table>
+	</div>
+
+</body>
+
+</html>
