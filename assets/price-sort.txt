@@ -1,0 +1,23 @@
+		<thead>
+        	<tr><th>CARRIER</th><th>NEAREST BRANCH</th><th>PRICE</th></tr>
+	    </thead>
+	    <tbody>
+	        <tr><td style="text-align: center;border-bottom: 0;">UPS Express</td><td style="text-align: center;border-bottom: 0;">3 km</td><td rowspan="2" style="text-align: right">$8.99</td></tr>
+	        <tr><td style="text-align: center;border-top: 0;">64 /stars/</td><td style="text-align: center;border-top: 0;">100 Avenue, ON K8A 5B7</td></tr>
+	    </tbody>
+	    <tbody>
+	        <tr><td style="text-align: center;border-bottom: 0;">Amazon</td><td style="text-align: center;border-bottom: 0;">2.3 km</td><td rowspan="2" style="text-align: right">$9.99</td></tr>
+	        <tr><td style="text-align: center;border-top: 0;">34 /stars/</td><td style="text-align: center;border-top: 0;">143 Avenue, ON K1B 6F2</td></tr>
+	    </tbody>
+	    <tbody>
+	        <tr><td style="text-align: center;border-bottom: 0;">Canada Post Regular</td><td style="text-align: center;border-bottom: 0;">2 km</td><td rowspan="2" style="text-align: right">$10.99</td></tr>
+	        <tr><td style="text-align: center;border-top: 0;">206 /stars/</td><td style="text-align: center;border-top: 0;">123 Street, ON J7F 9J6</td></tr>
+	    </tbody>
+	    <tbody>
+	        <tr><td style="text-align: center;border-bottom: 0;">UPS Premium</td><td style="text-align: center;border-bottom: 0;">3 km</td><td style="text-align: right;border-bottom: 0;">$15.99</td></tr>
+	        <tr><td style="text-align: center;border-top: 0;">15 /stars/</td><td style="text-align: center;border-top: 0;">100 Avenue, ON K8A 5B7</td><td style="text-align: right;border-top: 0;">Promotion Available</td></tr>
+	    </tbody>
+	    <tbody>
+	        <tr><td style="text-align: center;border-bottom: 0;">Purolator</td><td style="text-align: center;border-bottom: 0;">5 km</td><td style="text-align: right;border-bottom: 0;">$17.99</td></tr>
+	        <tr><td style="text-align: center;border-top: 0;">72 /stars/</td><td style="text-align: center;border-top: 0;">49 Avenue, ON K2A 3C6</td><td style="text-align: right;border-top: 0;">Promotion Available</td></tr>
+	    </tbody>
